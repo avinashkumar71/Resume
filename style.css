@@ -19,6 +19,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 nav h1{
     font-size: 30px;
@@ -71,8 +72,8 @@ nav button{
 #checkbox{
     display: none;
 }
-.notshow{
-    display: none;
+.show{
+    left: 0px;
 }
 
 @media(max-width:768px){
@@ -87,26 +88,30 @@ nav button{
         position: relative;
     }
     nav div{
+        width: 105%;
         position: absolute;
-        top: 65px;
-        width: 80%;
+        top: 68px;
+        left: -720px;
         flex-direction: column;
         gap: 10px;
+        background: rgb(229, 226, 226);
+        padding: 8px 0px;
         /* border: 1px solid black; */
     }
     nav ul{
-        width: 100%;
         flex-direction: column;
         gap: 7px;
         text-align: center;
         /* border: 1px solid black; */
     }
     nav li{
-        width: 100%;
         /* border: 1px solid black; */
     }
     #checkbtn{
         display: block;
+    }
+    nav button{
+        font-size: 13px;
     }
 }
 @media(max-width:576px){
@@ -129,4 +134,10 @@ nav button{
         padding: 0px 20px;
     }
     
+}
+
+/* section */
+section{
+    width: 80%;
+    padding: 0px 80px;
 }
