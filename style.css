@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans-serif",Verdana;
+}
+body{
+    /* background: linear-gradient(to top right, #33ccff 0%, #0066cc 100%); */
+    /* background-color: blue; */
+}
+.border{
+    border: 1px solid black;
+}
+nav{
+    width: 100%;
+    height:65px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+nav h1{
+    font-size: 30px;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+nav li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: red;
+    left:0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+nav button{
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: green;
+    border-radius: 30px;
+}
+#checkbtn{
+    font-size: 25px;
+    padding-left: 10px;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+.notshow{
+    display: none;
+}
+
+@media(max-width:768px){
+    nav{
+        padding: 0px 40px;
+    }
+    
+}
+@media(max-width:676px){
+    nav{
+        padding: 0px 40px;
+        position: relative;
+    }
+    nav div{
+        position: absolute;
+        top: 65px;
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+        /* border: 1px solid black; */
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+    nav li{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    #checkbtn{
+        display: block;
+    }
+}
+@media(max-width:576px){
+    nav{
+        padding: 0px 30px;
+    }
+
+}
+@media(max-width:472px){
+    nav{
+        padding: 0px 40px;
+    }
+    /* nav button{
+        display: none;
+    } */
+
+}
+@media(max-width:320px){
+    nav{
+        padding: 0px 20px;
+    }
+    
+}
