@@ -132,12 +132,222 @@ nav button{
 @media(max-width:320px){
     nav{
         padding: 0px 20px;
-    }
-    
+    } 
 }
-
 /* section */
 section{
-    width: 80%;
+    width: 100%;
     padding: 0px 80px;
+    display: flex;
+}
+.left_section{
+    flex: 50%;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+.developer_text{
+    margin-bottom: 2px;
+}
+.hello_text{
+    margin-bottom: -2px;
+    font-size: 55px;
+}
+.name_text{
+    margin-bottom: 4px;
+    color: green;
+    font-size: 55px;
+}
+.desc_text{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(116, 121, 116);
+}
+.download_logo{
+    display: flex;
+}
+.download_logo .fa-download,.fa-linkedin,.fa-github,.fa-twitter{
+    color: #1e7c04;
+    cursor: pointer;
+}
+
+.download_logo .button_div{
+    flex: 25%;
+    padding: 4px 0px;
+    color: #1e7c04;
+}
+.download_logo .button_div button{
+    padding: 8px 16px;
+    font-size: 15px; 
+    border-radius: 30px;
+    border: 1px solid #1e7c04;
+    color: #1e7c04;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.download_logo .logo{
+    flex: 75%;
+    display: flex;
+    font-size: 22px;
+    gap: 15px;
+    padding: 4px 15px;
+}
+.download_logo .logo span{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+.right_section{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.profile_image{
+    width: 250px;
+    height: 250px;
+    background-image: url(images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+@media(max-width:1487px){
+    section{
+        padding: 0px 70px;
+    }
+    .left_section{
+        flex: 60%;
+    }
+    .right_section{
+        flex: 40%;
+    }
+}
+@media(max-width:1260px){
+    .download_logo .button_div{
+        flex: 35%;
+    }
+    .download_logo .logo{
+        flex:65%;
+    }
+}
+@media (max-width:958px) {
+    section{
+        padding: 0px 50px;
+    }
+    .hello_text{
+        font-size: 40px;
+    }
+    .name_text{
+        font-size: 40px;
+    }
+}
+@media (max-width:920px) {
+    section{
+        padding: 0px 35px;
+    }
+    .profile_image{
+        width: 200px;
+        height: 200px;
+    }
+    .left_section{
+        flex: 65%;
+    }
+    .right_section{
+        flex: 35%;
+    }
+    .download_logo .button_div{
+        flex: 40%;
+    }
+    .download_logo .logo{
+        flex: 60%;
+    }
+    .hello_text{
+        font-size: 35px;
+    }
+    .name_text{
+        font-size: 35px;
+    }
+}
+@media(max-width:676px){
+    section{
+        flex-direction: column;
+        padding: 0px 60px;
+    }
+    
+    .hello_text{
+        font-size: 45px;
+    }
+    .name_text{
+        font-size: 45px;
+    }
+    .left_section{
+        order: 2;
+    }
+    .right_section{
+        order: 1;
+    }
+    .download_logo{
+        margin-top: 10px;
+    }
+    .download_logo .button_div{
+        flex: 50%;
+    }
+    .download_logo .logo{
+        flex: 50%;
+    }
+}
+@media(max-width:576px){
+    section{
+        width: 100%;
+        padding: 0px 30px;
+        display: flex;
+    }
+    .hello_text{
+        font-size: 35px;
+    }
+    .name_text{
+        font-size: 35px;
+    }
+    .download_logo .button_div{
+        flex: 50%;
+    }
+    .download_logo .button_div button{
+        padding: 8px 12px;
+        font-size: 12px; 
+    }
+    .download_logo .logo{
+        flex: 50%;
+        display: flex;
+        font-size: 18px;
+        gap: 15px;
+        padding: 4px 12px;
+    }
+}
+@media(max-width:392px){
+    section{
+        width: 100%;
+        padding: 0px 25px;
+        display: flex;
+    }
+    .download_logo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .download_logo .logo{
+        justify-content: center;
+    }
+    .hello_text{
+        margin-bottom: -2px;
+        font-size: 35px;
+    }
+    .name_text{
+        font-size: 35px;
+    }
+    .profile_image{
+        width: 220px;
+        height: 220px;
+    }
 }
