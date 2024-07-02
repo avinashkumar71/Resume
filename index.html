@@ -22,7 +22,8 @@
             <input type="checkbox" id="checkbox" onclick="fun()">
             <label for="checkbox" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
         </nav>
-        <section>
+        <!-- section -->
+         <section class="">
             <div class="left_section">
                 <div>
                     <p class="developer_text">Web Developer / Python Developer</p>
@@ -44,7 +45,111 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
+        <!-- bio -->
+        <div class="bio_container">
+            <div class="bio_wrapper">
+                <div class="bio_left_part">
+                    <div class="bio_left_part_wrapper">
+                        <div class="category_tab border active_link" onclick="category('experience')">Experience</div>
+                        <div class="category_tab border" onclick="category('educations')">Educations</div>
+                        <div class="category_tab border" onclick="category('certification')">Certifications</div>
+                        <div class="category_tab border " onclick="category('projects')">Projects</div>
+                        <div class="category_tab border" onclick="category('skills')">Skills</div>
+                        <div class="category_tab border " onclick="category('about')">About</div>
+                    </div>
+                </div>
+                <div class="bio_right_part">
+                    <div class="bio_right_content active_tab" id="experience">
+                        <h1>Experience</h1>
+                        <div class="experience_tab">
+                            <p>Fresher</p>
+                            <p>I have not professional experience, But I have invested substantial time in developing and honing my skills through various projects and personal learning</p>
+                        </div>
+                    </div>
+                    <div class="bio_right_content" id="educations">
+                        <h1>Education</h1>
+                        <div class="education_tab">
+                            <div class="project">
+                                <p class="project_name">File Upload and Download</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                            <div class="project">
+                                <p class="project_name">File Upload and Download</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bio_right_content " id="projects">
+                        <h1>projects</h1>
+                        <div class="project_tab">
+                            <div class="project">
+                                <p class="project_name">Spam Message Classifier</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                            <div class="project">
+                                <p class="project_name">Ecommerce</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                            <div class="project">
+                                <p class="project_name">File Upload and Download</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                            <div class="project">
+                                <p class="project_name">File Upload and Download</p>
+                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
+                                <span class="project_read_more">Read More</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bio_right_content" id="skills">
+                        <h1>Skills</h1>
+                        <div class="skills_tab">
+                            <span><i class="fa-brands fa-python"></i> python</span>
+                            <span><i class="fa-brands fa-js"></i>javaScript</span>
+                            <span><i class="fa-brands fa-react"></i>React</span>
+                            <span><i class="fa-solid fa-database"></i>Sql</span>
+                            <span><i class="fa-brands fa-html5"></i>HTML</span>
+                            <span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                            <span><i class="fa-brands fa-git-alt"></i>Git</span>
+                        </div>
+                    </div>
+                    <div class="bio_right_content " id="about">
+                        <h1>About</h1>
+                        <div class="about_tab">
+                            <p>Hello! I am Avinash Kumar, an aspiring full-stack developer with a strong foundation in Python and Django. With Bachelor's in Computer Science from Maharshi Dayanand University, I am eager to apply my skills and knowledge to real-world projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+         <div class="contact_container">
+            <div class="contact_wrapper ">
+                <div class="left_contact_part">
+                    <h1 class="contact_heading">Contact Me</h1>
+                    <div>
+                        <label><span><i class="fa-regular fa-envelope"></i></span><p>avinash72j@gmail.com</p></label>
+                        <label><span><i class="fa-solid fa-phone"></i></span><p>+91 9354696305</p></label>
+                    </div>
+                </div>
+                <div class="right_contact_part">
+                    <h1 class="contact_heading">Contact Form</h1>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Email">
+                        <textarea name="" id="" placeholder="Your Message"></textarea>
+                        <button class="border">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div> 
         <script src="./index.js"></script>
 </body>
 </html>

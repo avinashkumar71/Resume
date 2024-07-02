@@ -4,10 +4,7 @@
     box-sizing: border-box;
     font-family: "sans-serif",Verdana;
 }
-body{
-    /* background: linear-gradient(to top right, #33ccff 0%, #0066cc 100%); */
-    /* background-color: blue; */
-}
+
 .border{
     border: 1px solid black;
 }
@@ -96,16 +93,11 @@ nav button{
         gap: 10px;
         background: rgb(229, 226, 226);
         padding: 8px 0px;
-        /* border: 1px solid black; */
     }
     nav ul{
         flex-direction: column;
         gap: 7px;
         text-align: center;
-        /* border: 1px solid black; */
-    }
-    nav li{
-        /* border: 1px solid black; */
     }
     #checkbtn{
         display: block;
@@ -124,9 +116,7 @@ nav button{
     nav{
         padding: 0px 40px;
     }
-    /* nav button{
-        display: none;
-    } */
+    
 
 }
 @media(max-width:320px){
@@ -139,11 +129,13 @@ section{
     width: 100%;
     padding: 0px 80px;
     display: flex;
+    margin-top:60px;
 }
 .left_section{
     flex: 50%;
     padding: 20px 10px;
-    margin-top: 50px;
+    margin: 50px 0px;
+    
 }
 .developer_text{
     margin-bottom: 2px;
@@ -171,7 +163,6 @@ section{
 }
 
 .download_logo .button_div{
-    flex: 25%;
     padding: 4px 0px;
     color: #1e7c04;
 }
@@ -187,7 +178,6 @@ section{
 }
 
 .download_logo .logo{
-    flex: 75%;
     display: flex;
     font-size: 22px;
     gap: 15px;
@@ -203,7 +193,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 .profile_image{
     width: 250px;
@@ -225,14 +215,7 @@ section{
         flex: 40%;
     }
 }
-@media(max-width:1260px){
-    .download_logo .button_div{
-        flex: 35%;
-    }
-    .download_logo .logo{
-        flex:65%;
-    }
-}
+
 @media (max-width:958px) {
     section{
         padding: 0px 50px;
@@ -258,12 +241,6 @@ section{
     .right_section{
         flex: 35%;
     }
-    .download_logo .button_div{
-        flex: 40%;
-    }
-    .download_logo .logo{
-        flex: 60%;
-    }
     .hello_text{
         font-size: 35px;
     }
@@ -271,10 +248,17 @@ section{
         font-size: 35px;
     }
 }
+@media (max-width:716px) {
+    .download_logo .button_div button{
+        font-size: 13px;
+    }
+}
 @media(max-width:676px){
     section{
         flex-direction: column;
-        padding: 0px 60px;
+        width: 70%;
+        padding: 0px 0px;
+        margin: 0px auto;
     }
     
     .hello_text{
@@ -292,12 +276,7 @@ section{
     .download_logo{
         margin-top: 10px;
     }
-    .download_logo .button_div{
-        flex: 50%;
-    }
-    .download_logo .logo{
-        flex: 50%;
-    }
+    
 }
 @media(max-width:576px){
     section{
@@ -311,15 +290,12 @@ section{
     .name_text{
         font-size: 35px;
     }
-    .download_logo .button_div{
-        flex: 50%;
-    }
+    
     .download_logo .button_div button{
         padding: 8px 12px;
         font-size: 12px; 
     }
     .download_logo .logo{
-        flex: 50%;
         display: flex;
         font-size: 18px;
         gap: 15px;
@@ -329,15 +305,17 @@ section{
 @media(max-width:392px){
     section{
         width: 100%;
-        padding: 0px 25px;
+        padding: 0px 10px;
         display: flex;
     }
     .download_logo{
-        flex-direction: column;
-        text-align: center;
+        gap: 8px;
+    }
+    .download_logo .button_div{
+        padding: 4px 0px;
     }
     .download_logo .logo{
-        justify-content: center;
+        padding: 4px 0px;
     }
     .hello_text{
         margin-bottom: -2px;
@@ -349,5 +327,274 @@ section{
     .profile_image{
         width: 220px;
         height: 220px;
+    }
+}
+@media (max-width:336px) {
+    .download_logo{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .download_logo .button_div button{
+        width: 100%;
+    }
+    .download_logo .logo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+    /* skills */
+.bio_container{
+    padding: 0px 80px;
+}
+.bio_wrapper{
+    margin: 20px 0px;
+    display: flex;
+    height: 60vh;
+}
+.bio_left_part{
+    flex: 30%;
+    border-top: 1px solid rgb(217, 212, 212);
+    border-bottom: 1px solid rgb(217, 212, 212);
+    padding-top:40px ;
+}
+.bio_right_part{
+    flex: 70%;
+    border-top: 1px solid rgb(217, 212, 212);
+    border-bottom: 1px solid rgb(217, 212, 212);
+    overflow: auto;
+    padding-top:40px ;
+}
+.bio_left_part_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px 10px;
+}
+.category_tab{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #1e7c04;
+    border: 1px solid #1e7c04;
+    font-size: 14px;
+}
+.active_link{
+    color: white;
+    background: #43d51b;
+}
+.bio_right_content{
+    display: none;
+    width: 95%;
+    margin: 2px auto;
+}
+.active_tab{
+    display: block;
+}
+.experience_tab{
+    margin: 10px 0px;
+}
+.experience_tab p{
+    line-height: 26px;
+    word-spacing: 5px;
+}
+.project_tab{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 20px;
+    margin: 15px 0px;
+}
+.project{
+    /* width: 270px; */
+    padding: 10px 15px;
+    background: #262626;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.project:hover{
+    transform: translateY(-8px);
+    background: #ff004f;
+    color: white;
+}
+.project_name{
+    font-weight: 700;
+}
+.project_desc{
+    font-size: 14px;
+    margin: 5px 0px;
+}
+.project_read_more{
+    cursor: pointer;
+}
+.education_tab{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 20px;
+    margin: 15px 0px;
+}
+.skills_tab{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    gap: 15px;
+    margin: 15px 0px;
+}
+.skills_tab span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.fa-react{
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg);
+    }
+}
+
+.skills_tab span i{
+    font-size: 50px;
+}
+.about_tab{
+    margin: 10px 0px;
+}
+.about_tab p{
+    line-height: 26px;
+    word-spacing: 5px;
+}
+@media (max-width:1096px) {
+    .bio_container{
+        padding: 0px 50px;
+    }
+    .bio_wrapper{
+        flex-direction: column;
+    }
+    .category_tab{
+        padding: 0px 18px;
+        font-size: 14px;
+    }
+    
+}
+@media (max-width:768px) {
+    .bio_container{
+        padding: 0px 30px;
+    }
+    .bio_wrapper{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .category_tab{
+        padding: 0px 18px;
+        font-size: 14px;
+    }  
+}
+
+/* contact */
+.contact_container{
+    padding: 0px 80px;
+    margin: 50px 0px;
+}
+.contact_wrapper{
+    display: flex;
+}
+.left_contact_part{
+    flex: 50%;
+    padding: 10px 15px;
+}
+.left_contact_part div{
+    margin: 10px 0px;
+}
+.left_contact_part label{
+    display: flex;
+    gap: 10px;
+    margin: 7px 0px;
+}
+.right_contact_part{
+    flex: 50%;
+    padding: 10px 15px;
+}
+.contact_container form{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin: 10px 0px;
+}
+.contact_container form input,textarea{
+    padding: 10px 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),inset -4px -4px 6px -1px rgba(255,255,255,1),0.5px 0.5px 0px rgba(0,0,0,0.15),-0.5px -0.5px 0px rgb(255,255,255,1),0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+.contact_container form button{
+    width: 20%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ff004f;
+    background: white;
+    color: #ff004f;
+    transition: 0.3s;
+}
+.contact_container form button:hover{
+    background: #ff004f;
+    color: white;
+}
+@media (max-width:992px) {
+    .contact_container{
+        padding: 0px 30px;
+    }
+    .contact_container form button{
+        width: 40%;
+    }
+    .contact_heading{
+        font-size: 24px;
+    }
+}
+@media (max-width:768px) {
+    .contact_container{
+        padding: 0px 30px;
+    }
+    .contact_container form button{
+        width: 40%;
+    }
+    .contact_heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:576px) {
+    .contact_container{
+        padding: 0px 30px;
+    }
+    .contact_wrapper{
+        flex-direction: column;
+    }
+    .left_contact_part{
+        order: 2;
+    }
+    .right_contact_part{
+        order: 1;
+        text-align: center;
+    }
+    .contact_container form button{
+        width: 30%;
+    }
+    .contact_heading{
+        font-size: 25px;
+    }
+    
+}
+@media (max-width:350px) {
+    .contact_container form button{
+        width: 40%;
+    }
+    .contact_heading{
+        font-size: 20px;
     }
 }
