@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "sans-serif",Verdana;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 .border{
     border: 1px solid black;
@@ -181,6 +184,8 @@ section{
     display: flex;
     font-size: 22px;
     gap: 15px;
+    justify-content: space-around;
+    align-items: center;
     padding: 4px 15px;
 }
 .download_logo .logo span{
@@ -269,6 +274,7 @@ section{
     }
     .left_section{
         order: 2;
+        margin: -20px 0px;
     }
     .right_section{
         order: 1;
@@ -400,6 +406,24 @@ section{
     line-height: 26px;
     word-spacing: 5px;
 }
+.education_tab{
+
+}
+.education_heading{
+    padding: 2px 5px;
+    background:red;
+    color: white;
+}
+.education_course{
+    padding: 2px 5px;
+}
+.education_wrapper{
+    line-height: 24px;
+    /* border: 1px solid rgb(218, 216, 216); */
+}
+.education_wrapper p{
+    font-weight: 900;
+}
 .project_tab{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
@@ -424,7 +448,18 @@ section{
 }
 .project_desc{
     font-size: 14px;
-    margin: 5px 0px;
+    margin: 8px 0px;
+    /* text-align: justify; */
+}
+.project a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.project a:hover{
+    background: black;
 }
 .project_read_more{
     cursor: pointer;
@@ -505,6 +540,20 @@ section{
 .left_contact_part{
     flex: 50%;
     padding: 10px 15px;
+    position: relative;
+}
+.arrow_up_top{
+    position: absolute;
+    left:15px;
+    bottom: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.fa-arrow-up{
+    padding: 6px 6px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .left_contact_part div{
     margin: 10px 0px;
@@ -587,6 +636,13 @@ section{
     }
     .contact_heading{
         font-size: 25px;
+    }
+    .arrow_up_top{
+        position: absolute;
+        left:12px;
+        bottom: -40px;
+        justify-content: center;
+        align-items: center;
     }
     
 }

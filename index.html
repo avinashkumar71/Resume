@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/627a9356b3.js" crossorigin="anonymous"></script>
 </head>
-<body>
-        <nav>
+<body id="home">
+        <nav >
             <h1>avinash.</h1>
             <div class="navbar_list">
                 <ul>
                     <li><a href="#home" >Home</a></li>
-                    <li><a href="#about" >About</a></li>
+                    <li><a href="#info">Info</a></li>
                     <li><a href="#contact" >Contact</a></li>
                     <li><a href="#service" >Services</a></li>
                 </ul>
@@ -23,16 +23,20 @@
             <label for="checkbox" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
         </nav>
         <!-- section -->
-         <section class="">
-            <div class="left_section">
+         <section>
+            <div class="left_section border">
                 <div>
                     <p class="developer_text">Web Developer / Python Developer</p>
                     <h1 class="hello_text">Hello I'm</h1>
                     <h1 class="name_text">Avinash Kumar</h1>
                     <p class="desc_text">I'm web/python Developer seeking for a job.</p>
                     <div class="download_logo">
-                        <div class="button_div"><button><span style="padding-right: 10px;">Download CV</span><i class="fa-solid fa-download"></i></button></div>
-                        <div class="logo"><span><i class="fa-brands fa-linkedin"></i></span><span><i class="fa-brands fa-github" ></i></span><span><i class="fa-brands fa-twitter"></i></span></div>
+                        <div class="button_div"><a href="https://drive.google.com/file/d/1ZLLKsfe88zDPj2LhtvGUvuPn8fBDHc0J/view?usp=sharing" target="_blank"><button downloads><span style="padding-right: 10px;">Download CV</span><i class="fa-solid fa-download"></i></button></a></div>
+                        <div class="logo">
+                            <a href="https://www.linkedin.com/in/avinash-kumar-4ba06b295/" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                            <a href="https://github.com/avinashkumar71" target="_blank"><span><i class="fa-brands fa-github" ></i></span></a>
+                            <a href=""><span><i class="fa-brands fa-twitter"></i></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,7 +51,7 @@
             </div>
         </section> 
         <!-- bio -->
-        <div class="bio_container">
+        <div class="bio_container" id="info">
             <div class="bio_wrapper">
                 <div class="bio_left_part">
                     <div class="bio_left_part_wrapper">
@@ -68,17 +72,36 @@
                         </div>
                     </div>
                     <div class="bio_right_content" id="educations">
-                        <h1>Education</h1>
+                        <h1>Educations</h1>
                         <div class="education_tab">
-                            <div class="project">
-                                <p class="project_name">File Upload and Download</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
+                            <div class="education_wrapper border">
+                                <p class="education_heading">Maharshi Dayanand University</p>
+                                <p class="education_course">Bachelor's in Computer Science</p>
                             </div>
-                            <div class="project">
-                                <p class="project_name">File Upload and Download</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
+                            <div class="education_wrapper border">
+                                <p class="education_heading">GSS High School</p>
+                                <p class="education_course">12th</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bio_right_content" id="certification">
+                        <h1>Certifications</h1>
+                        <div class="education_tab">
+                            <div class="education_wrapper border">
+                                <p class="education_heading">Besant Technology</p>
+                                <p class="education_course">Python Full Stack Development</p>
+                            </div>
+                            <div class="education_wrapper border">
+                                <p class="education_heading">IBM Developer Skills Network.</p>
+                                <p class="education_course">Data Analysis with python</p>
+                            </div>
+                            <div class="education_wrapper border">
+                                <p class="education_heading">IIT Roorkee</p>
+                                <p class="education_course">Data Analysis with python</p>
+                            </div>
+                            <div class="education_wrapper border">
+                                <p class="education_heading">IIT Madras</p>
+                                <p class="education_course">Python for Data Science</p>
                             </div>
                         </div>
                     </div>
@@ -87,24 +110,20 @@
                         <div class="project_tab">
                             <div class="project">
                                 <p class="project_name">Spam Message Classifier</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
+                                <p class="project_desc">The objective of this project is to build a machine learning model that can classify messages as spam or not spam.</p>
+                                <a href=""><span class="project_read_more">Read More</span></a>
                             </div>
                             <div class="project">
                                 <p class="project_name">Ecommerce</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
+                                <p class="project_desc">The project is a full-stack eCommerce web application that allows users to browse products, manage their cart, and complete purchases.</p>
+                                <a href=""><span class="project_read_more">Read More</span></a>
                             </div>
                             <div class="project">
                                 <p class="project_name">File Upload and Download</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
+                                <p class="project_desc">The project is a full-stack web application that allows users to upload and download files.</p>
+                                <a href=""><span class="project_read_more">Read More</span></a>
                             </div>
-                            <div class="project">
-                                <p class="project_name">File Upload and Download</p>
-                                <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe? </p>
-                                <span class="project_read_more">Read More</span>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="bio_right_content" id="skills">
@@ -129,22 +148,22 @@
             </div>
         </div>
         <!-- contact -->
-         <div class="contact_container">
+         <div class="contact_container" id="contact">
             <div class="contact_wrapper ">
                 <div class="left_contact_part">
                     <h1 class="contact_heading">Contact Me</h1>
-                    <div>
+                    <div class="">
                         <label><span><i class="fa-regular fa-envelope"></i></span><p>avinash72j@gmail.com</p></label>
-                        <label><span><i class="fa-solid fa-phone"></i></span><p>+91 9354696305</p></label>
+                        <label class="arrow_up_top"><a href="#home"><span><i class="fa-solid fa-arrow-up"></i></span></a><p>Go To Top</p></label>
                     </div>
                 </div>
                 <div class="right_contact_part">
                     <h1 class="contact_heading">Contact Form</h1>
-                    <form>
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Your Email">
-                        <textarea name="" id="" placeholder="Your Message"></textarea>
-                        <button class="border">Submit</button>
+                    <form  name="submit-to-google-sheet" class="">
+                        <input type="text" placeholder="Your Name" name="name" required>
+                        <input type="text" placeholder="Your Email" name="email" required>
+                        <textarea id="" placeholder="Your Message" name="message" required></textarea>
+                        <button class="border" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
