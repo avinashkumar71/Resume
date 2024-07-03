@@ -476,6 +476,10 @@ section{
     gap: 15px;
     margin: 15px 0px;
 }
+.skills_tab img{
+    width: 55px;
+    height: 55px;
+}
 .skills_tab span{
     display: flex;
     flex-direction: column;
